@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Àkanní — One Roof. All Digital. Real Impact.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div id="loader">
+  <div class="lname">Àkan<em>n</em>í</div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+    <div class="lbar-w"><div class="lbar"></div></div>
+  </div>
+</div>
+
+<div id="dot"></div>
+<div id="ring"></div>
+<div id="prog"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-meta">
+    <span class="hero-meta-dot"></span>
+    <span>Full-Stack Digital Studio</span>
+    <div class="hero-meta-sep"></div>
+    <span>Based in India</span>
+    <div class="hero-meta-sep"></div>
+    <span>Since 2019</span>
+  </div>
+  <div class="hero-brand">
+    <span class="hero-brand-name"><span class="hbn-inner">Àkan<em>n</em>í</span></span>
+    <div class="hero-tagline">
+      <span>One Roof</span><span class="htl-sep"></span>
+      <span>All Digital</span><span class="htl-sep"></span>
+      <span>Real Impact</span>
+    </div>
+  </div>
+  <div class="hero-img-wrap">
+    <div class="hero-img-gradient"></div>
+    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=1600&q=90" alt="Àkanní studio"/>
+  </div>
+</section>
+
+<!-- FLOATING NAV PILL -->
+<nav id="floatnav">
+  <span class="fn-logo">Àkan<em>n</em>í</span>
+  <div class="fn-links">
+    <a href="#about"    class="fn-link">About</a>
+    <a href="#services" class="fn-link">Services</a>
+    <a href="#work"     class="fn-link">Work</a>
+    <a href="#process"  class="fn-link">Process</a>
+  </div>
+  <a href="#cta" class="fn-cta">Let's Talk →</a>
+</nav>
+
+<!-- MARQUEE -->
+<div class="marq">
+  <div class="mtrack">
+    <span class="mi"><span class="mdot"></span>AI Design</span>
+    <span class="mi"><span class="mdot"></span>Web Development</span>
+    <span class="mi"><span class="mdot"></span>App Development</span>
+    <span class="mi"><span class="mdot"></span>Digital Marketing</span>
+    <span class="mi"><span class="mdot"></span>Social Impact</span>
+    <span class="mi"><span class="mdot"></span>Brand Strategy</span>
+    <span class="mi"><span class="mdot"></span>National Projects</span>
+    <span class="mi"><span class="mdot"></span>Community Empowerment</span>
+    <span class="mi"><span class="mdot"></span>AI Design</span>
+    <span class="mi"><span class="mdot"></span>Web Development</span>
+    <span class="mi"><span class="mdot"></span>App Development</span>
+    <span class="mi"><span class="mdot"></span>Digital Marketing</span>
+    <span class="mi"><span class="mdot"></span>Social Impact</span>
+    <span class="mi"><span class="mdot"></span>Brand Strategy</span>
+    <span class="mi"><span class="mdot"></span>National Projects</span>
+    <span class="mi"><span class="mdot"></span>Community Empowerment</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="about-left" data-r="up">
+      <div class="eyebrow">Studio</div>
+      <h2 class="sh" style="margin-bottom:28px">Where digital<br><em>meets</em> purpose</h2>
+      <p class="about-body">Àkanní is a full-stack digital studio rooted in purpose. We don't just build websites — we architect digital experiences that move communities, elevate brands, and create lasting change.</p>
+      <p class="about-body">Every project is a true partnership. We embed ourselves in your goals and vision, then bring it to life with precision and craft.</p>
+      <div class="about-stats-row">
+        <div class="astat-pill"><div class="asp-n" data-count="50">0</div><div class="asp-l">Projects</div></div>
+        <div class="astat-pill"><div class="asp-n" data-count="30">0</div><div class="asp-l">Clients</div></div>
+        <div class="astat-pill"><div class="asp-n" data-count="5">0</div><div class="asp-l">Years</div></div>
+      </div>
+      <div class="av-list">
+        <div class="av">Full-stack capability under one roof<span class="av-arrow">↗</span></div>
+        <div class="av">AI-first approach to every project<span class="av-arrow">↗</span></div>
+        <div class="av">National &amp; community impact projects<span class="av-arrow">↗</span></div>
+        <div class="av">Data-driven, results-oriented<span class="av-arrow">↗</span></div>
+        <div class="av">Concept to launch, end-to-end<span class="av-arrow">↗</span></div>
+      </div>
+      <div style="margin-top:40px">
+        <a href="#services" class="btn btn-dark" style="background:var(--gold);color:var(--ink)">Explore Services →</a>
+      </div>
+    </div>
+    <div class="about-right" data-r="right">
+      <div class="about-right-inner">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=90" alt="Àkanní team"/>
+      </div>
+      <div class="about-card">
+        <div class="ac-line"></div>
+        <div>
+          <div class="ac-quote">"Real impact, under one roof."</div>
+          <div class="ac-attr">Àkanní Studio · Mumbai, India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="srv-hd" data-r="up">
+    <div>
+      <div class="eyebrow">Services</div>
+      <h2 class="sh">What we <em>deliver</em></h2>
+    </div>
+    <p class="srv-hd-r">Six core disciplines. One integrated studio. Every service crafted to move the needle.</p>
+  </div>
+
+  <div class="svc-grid">
+
+    <!-- Card 1 -->
+    <div class="svc-card" data-svc="1">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-card-img">
+          <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=85" alt="AI Design"/>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">01</span>
+            <span class="svc-card-chip">AI-Powered</span>
+          </div>
+          <span class="svc-card-icon">🤖</span>
+          <div class="svc-card-title">AI Design &amp; Strategy</div>
+          <p class="svc-card-desc">Intelligent UX, AI-generated assets, and smart design systems that work harder and faster than anything before.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>AI-generated visual assets</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Intelligent UX flows</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Generative design systems</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="svc-card" data-svc="2" style="transition-delay:.08s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-card-img">
+          <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=700&q=85" alt="Web Development"/>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">02</span>
+            <span class="svc-card-chip">High Performance</span>
+          </div>
+          <span class="svc-card-icon">💻</span>
+          <div class="svc-card-title">Web Development</div>
+          <p class="svc-card-desc">Bespoke, performance-first websites and platforms — built with modern stacks and architected to scale.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>React / Next.js / Vue</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Core Web Vitals optimised</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>CMS &amp; headless architecture</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="svc-card" data-svc="3" style="transition-delay:.16s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-card-img">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&q=85" alt="App Development"/>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">03</span>
+            <span class="svc-card-chip">Cross-Platform</span>
+          </div>
+          <span class="svc-card-icon">📱</span>
+          <div class="svc-card-title">App Development</div>
+          <p class="svc-card-desc">Native and cross-platform mobile apps — iOS, Android, and PWA — engineered for delight and retention.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>iOS &amp; Android native</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>React Native / Flutter</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Progressive Web Apps</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="svc-card" data-svc="4" style="transition-delay:.06s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-card-img">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=85" alt="Digital Marketing"/>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">04</span>
+            <span class="svc-card-chip">Full-Funnel</span>
+          </div>
+          <span class="svc-card-icon">📈</span>
+          <div class="svc-card-title">Digital Marketing</div>
+          <p class="svc-card-desc">SEO, paid media, content strategy and social — full-funnel growth engines that compound over time.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>SEO &amp; content strategy</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Google &amp; Meta paid ads</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Social media management</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="svc-card" data-svc="5" style="transition-delay:.14s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-card-img">
+          <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&q=85" alt="Brand Identity"/>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">05</span>
+            <span class="svc-card-chip">Strategic</span>
+          </div>
+          <span class="svc-card-icon">🎨</span>
+          <div class="svc-card-title">Brand Identity</div>
+          <p class="svc-card-desc">Strategic branding that tells your story — logos, systems, and visual languages that are instantly unforgettable.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Logo &amp; visual identity</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Brand guidelines</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Packaging &amp; print</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="svc-card" data-svc="6" style="transition-delay:.22s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-card-img">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=85" alt="Social Impact"/>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">06</span>
+            <span class="svc-card-chip">Purpose-Led</span>
+          </div>
+          <span class="svc-card-icon">🌍</span>
+          <div class="svc-card-title">Social Impact Projects</div>
+          <p class="svc-card-desc">Partnering with NGOs, governments, and communities to build digital solutions that drive real-world change.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>NGO &amp; non-profit portals</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Government digital projects</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Community platforms</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="work-inner">
+    <div class="whead" data-r="up">
+      <div>
+        <div class="eyebrow">Selected Work</div>
+        <h2 class="sh">Projects that <em>define</em> us</h2>
+      </div>
+      <a href="#cta" class="btn btn-ghost">Start a project →</a>
+    </div>
+  </div>
+  <div class="proj-list">
+
+    <!-- Project 1: Kawalthe Konnections -->
+    <div class="proj" data-r="up">
+      <div class="proj-img">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=85" alt="Kawalthe Konnections"/>
+      </div>
+      <div class="proj-tint"></div>
+      <div class="proj-grad"></div>
+      <div class="proj-body">
+        <div class="proj-left">
+          <div class="proj-index">Agrotourism · Web Design &amp; Development</div>
+          <div class="proj-name">Kawalthe<br>Konnections</div>
+          <div class="proj-desc">An immersive agrotourism website connecting visitors with nature, farm stays, and rural experiences in the Sahyadri region. Built to bring the beauty of village life online.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Web Design</span>
+            <span class="proj-tag">Agrotourism</span>
+            <span class="proj-tag">Booking System</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-year">2024</span>
+          <div class="proj-cta">↗</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Comic Bee -->
+    <div class="proj" data-r="up" style="transition-delay:.1s">
+      <div class="proj-img">
+        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1600&q=85" alt="Comic Bee"/>
+      </div>
+      <div class="proj-tint"></div>
+      <div class="proj-grad"></div>
+      <div class="proj-body">
+        <div class="proj-left">
+          <div class="proj-index">EdTech · Educational Platform</div>
+          <div class="proj-name">Comic<br><em style="color:var(--gold)">Bee</em></div>
+          <div class="proj-desc">A playful educational platform that makes learning engaging through comics and storytelling. Students explore subjects through animated, comic-style content that makes knowledge stick.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">EdTech</span>
+            <span class="proj-tag">UI/UX Design</span>
+            <span class="proj-tag">Web App</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-year">2024</span>
+          <div class="proj-cta">↗</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Lisa.clo -->
+    <div class="proj" data-r="up" style="transition-delay:.2s">
+      <div class="proj-img">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1600&q=85" alt="Lisa.clo"/>
+      </div>
+      <div class="proj-tint"></div>
+      <div class="proj-grad"></div>
+      <div class="proj-body">
+        <div class="proj-left">
+          <div class="proj-index">Fashion · E-Commerce · Brand Identity</div>
+          <div class="proj-name">Lisa<em style="color:var(--gold);font-style:italic">.clo</em></div>
+          <div class="proj-desc">A refined clothing brand website with an editorial feel. Curated lookbooks, seamless e-commerce, and a visual identity that speaks to modern, minimal fashion.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Fashion Brand</span>
+            <span class="proj-tag">E-Commerce</span>
+            <span class="proj-tag">Ongoing</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-status">Ongoing</span>
+          <div class="proj-cta">↗</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="sec" style="padding-bottom:0">
+    <div data-r="up">
+      <div class="eyebrow">How We Work</div>
+      <h2 class="sh" style="max-width:460px">A process built for <em>results</em></h2>
+    </div>
+  </div>
+  <div class="pgrid" style="margin:72px 60px 0">
+    <div class="pc" data-r="up" style="transition-delay:.04s">
+      <div class="pc-n">01 — DISCOVER</div>
+      <div class="pc-img"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Discovery"/></div>
+      <div class="pc-name">Discover &amp; Define</div>
+      <p class="pc-desc">Deep-dive workshops. Hard questions upfront. Competitors mapped. Goals crystallised.</p>
+      <div class="pchips"><span class="pchip">Interviews</span><span class="pchip">Research</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.08s">
+      <div class="pc-n">02 — STRATEGY</div>
+      <div class="pc-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Strategy"/></div>
+      <div class="pc-name">Strategy &amp; Architecture</div>
+      <p class="pc-desc">Insights become digital strategy, IA, and a technical roadmap aligned to goals.</p>
+      <div class="pchips"><span class="pchip">UX Strategy</span><span class="pchip">Roadmap</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.12s">
+      <div class="pc-n">03 — DESIGN</div>
+      <div class="pc-img"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Design"/></div>
+      <div class="pc-name">Design &amp; Prototype</div>
+      <p class="pc-desc">Wireframes, hi-fi designs, interactive prototypes. We iterate until it's right.</p>
+      <div class="pchips"><span class="pchip">Figma</span><span class="pchip">AI Design</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.16s">
+      <div class="pc-n">04 — BUILD</div>
+      <div class="pc-img"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Build"/></div>
+      <div class="pc-name">Build &amp; Launch</div>
+      <p class="pc-desc">Clean code. Agile sprints. Rigorous QA. Deployed with confidence.</p>
+      <div class="pchips"><span class="pchip">Agile</span><span class="pchip">CI/CD</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.20s">
+      <div class="pc-n">05 — GROW</div>
+      <div class="pc-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Growth"/></div>
+      <div class="pc-name">Grow &amp; Optimise</div>
+      <p class="pc-desc">Analytics, A/B testing, growth marketing. Continuous optimisation that compounds.</p>
+      <div class="pchips"><span class="pchip">Analytics</span><span class="pchip">Growth</span></div>
+    </div>
+  </div>
+  <div style="height:140px"></div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testi" class="sec">
+  <div data-r="up">
+    <div class="eyebrow">Clients</div>
+    <h2 class="sh">What they <em>say</em></h2>
+  </div>
+  <div class="tgrid">
+    <div class="tc" data-r="up" style="transition-delay:.07s">
+      <p class="tq">Àkanní transformed our digital presence completely. Their ideas and execution were both flawless. Real impact, on time and on budget.</p>
+      <div class="ta">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rahul"/>
+        <div><div class="ta-n">Rahul Sharma</div><div class="ta-r">CEO, TechVenture India</div></div>
+      </div>
+    </div>
+    <div class="tc" data-r="up" style="transition-delay:.14s">
+      <p class="tq">From strategy to launch they handled everything with expertise. Our platform now serves thousands across Maharashtra.</p>
+      <div class="ta">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Priya"/>
+        <div><div class="ta-n">Priya Deshmukh</div><div class="ta-r">Director, Community Foundation</div></div>
+      </div>
+    </div>
+    <div class="tc" data-r="up" style="transition-delay:.21s">
+      <p class="tq">The AI design work is next-level. Our brand finally looks as premium as our product. Àkanní is our long-term digital partner.</p>
+      <div class="ta">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Amit"/>
+        <div><div class="ta-n">Amit Kulkarni</div><div class="ta-r">Founder, StartupMumbai</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-bg">Àkanní</div>
+  <div class="eyebrow" data-r="up" style="justify-content:center">Let's Build Together</div>
+  <h2 class="sh" data-r="up" style="transition-delay:.09s">Ready to create<br>something <em>remarkable?</em></h2>
+  <p class="cta-sub" data-r="up" style="transition-delay:.18s">Whether you're a startup, enterprise, NGO, or government body — partner with Àkanní on your next digital initiative.</p>
+  <div class="cta-row" data-r="up" style="transition-delay:.27s">
+    <a href="/cdn-cgi/l/email-protection#b0d8d5dcdcdff0d1dbd1deded99ed3df9ed9de" class="btn btn-dark">Start a Conversation →</a>
+    <a href="#work" class="btn btn-ghost-w">See Our Portfolio</a>
+  </div>
+  <p class="cta-email" data-r="up" style="transition-delay:.36s">Or email us at <a href="/cdn-cgi/l/email-protection#e189848d8d8ea1808a808f8f88cf828ecf888f"><span class="__cf_email__" data-cfemail="0d65686161624d6c666c636364236e62236463">team.akanni@gmail.com</span></a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftop">
+    <div>
+      <div class="flogo">Àkan<em>n</em>í</div>
+      <p class="ftag">One roof. All digital. Real impact. Building the future of digital India, one project at a time.</p>
+    </div>
+    <div>
+      <div class="fct">Company</div>
+      <div class="flinks">
+        <a href="#about">About Us</a><a href="#services">Services</a>
+        <a href="#work">Portfolio</a><a href="#process">Process</a>
+      </div>
+    </div>
+    <div>
+      <div class="fct">Services</div>
+      <div class="flinks">
+        <a href="#">AI Design</a><a href="#">Web Dev</a>
+        <a href="#">App Dev</a><a href="#">Marketing</a><a href="#">Social Impact</a>
+      </div>
+    </div>
+    <div>
+      <div class="fct">Connect</div>
+      <div class="flinks">
+        <a href="https://akanni.co.in" target="_blank">akanni.co.in</a>
+        <a href="/cdn-cgi/l/email-protection#3a525f5656557a5b515b545453145955145354"><span class="__cf_email__" data-cfemail="1a727f7676755a7b717b747473347975347374">[email&#160;protected]</span></a>
+        <a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Twitter / X</a>
+      </div>
+    </div>
+  </div>
+  <div class="fbot">
+    <span class="fbot-l">© 2025 Àkanní. All rights reserved. India.</span>
+    <div class="fsoc">
+      <a href="#" class="fsl">in</a>
+      <a href="#" class="fsl">𝕏</a>
+      <a href="#" class="fsl">ig</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Main JavaScript -->
+<script src="main.js"></script>
+
+</body>
+</html>
