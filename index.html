@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Àkanní — Social Media That Actually Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="lname">Àkan<em>n</em>í</div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+    <div class="lbar-w"><div class="lbar"></div></div>
+    <div class="lsub">Social Media Studio</div>
+  </div>
+</div>
+
+<div id="dot"></div>
+<div id="ring"></div>
+<div id="prog"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-mesh">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+    <div class="mesh-orb mesh-orb-4"></div>
+    <div class="mesh-grid"></div>
+  </div>
+  <div class="hero-meta">
+    <span class="hero-meta-dot"></span>
+    <span>Social Media Management</span>
+    <div class="hero-meta-sep"></div>
+    <span>Based in India</span>
+    <div class="hero-meta-sep"></div>
+    <span>Since 2019</span>
+  </div>
+  <div class="hero-brand">
+    <span class="hero-brand-name"><span class="hbn-inner">Àkan<em>n</em>í</span></span>
+    <div class="hero-tagline">
+      <span>Grow Online</span><span class="htl-sep"></span>
+      <span>Build Community</span><span class="htl-sep"></span>
+      <span>Drive Results</span>
+    </div>
+  </div>
+  <div class="hero-band">
+    <div class="band-inner">
+      <div class="band-block b1"></div>
+      <div class="band-block b2"></div>
+      <div class="band-block b3"></div>
+      <div class="band-block b4"></div>
+      <div class="band-block b5"></div>
+      <div class="band-block b6"></div>
+    </div>
+    <div class="hero-img-gradient"></div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- FLOATING NAV PILL -->
+<nav id="floatnav">
+  <span class="fn-logo">Àkan<em>n</em>í</span>
+  <div class="fn-links">
+    <a href="#about"    class="fn-link">About</a>
+    <a href="#services" class="fn-link">Services</a>
+    <a href="#work"     class="fn-link">Work</a>
+    <a href="#process"  class="fn-link">Process</a>
+  </div>
+  <a href="#cta" class="fn-cta">Let's Talk →</a>
+</nav>
+
+<!-- MARQUEE -->
+<div class="marq">
+  <div class="mtrack">
+    <span class="mi"><span class="mdot"></span>Social Media Management</span>
+    <span class="mi"><span class="mdot"></span>Content Creation</span>
+    <span class="mi"><span class="mdot"></span>SMM Strategy</span>
+    <span class="mi"><span class="mdot"></span>Instagram Growth</span>
+    <span class="mi"><span class="mdot"></span>Brand Storytelling</span>
+    <span class="mi"><span class="mdot"></span>Community Building</span>
+    <span class="mi"><span class="mdot"></span>Paid Social Ads</span>
+    <span class="mi"><span class="mdot"></span>Analytics & Reporting</span>
+    <span class="mi"><span class="mdot"></span>Social Media Management</span>
+    <span class="mi"><span class="mdot"></span>Content Creation</span>
+    <span class="mi"><span class="mdot"></span>SMM Strategy</span>
+    <span class="mi"><span class="mdot"></span>Instagram Growth</span>
+    <span class="mi"><span class="mdot"></span>Brand Storytelling</span>
+    <span class="mi"><span class="mdot"></span>Community Building</span>
+    <span class="mi"><span class="mdot"></span>Paid Social Ads</span>
+    <span class="mi"><span class="mdot"></span>Analytics & Reporting</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="about-left" data-r="up">
+      <div class="eyebrow">Who We Are</div>
+      <h2 class="sh" style="margin-bottom:28px">Social media that<br><em>actually</em> converts</h2>
+      <p class="about-body">Àkanní is a Social Media Management agency built for brands that refuse to be ignored. We craft scroll-stopping content, build engaged communities, and turn followers into loyal customers.</p>
+      <p class="about-body">Every post, every story, every campaign is intentional. We embed ourselves in your brand voice and make your social presence impossible to scroll past.</p>
+      <div class="about-stats-row">
+        <div class="astat-pill"><div class="asp-n" data-count="20">0</div><div class="asp-l">Brands</div></div>
+        <div class="astat-pill"><div class="asp-n" data-count="9">0</div><div class="asp-l">Clients</div></div>
+        <div class="astat-pill"><div class="asp-n" data-count="2">0</div><div class="asp-l">Years</div></div>
+      </div>
+      <div class="av-list">
+        <div class="av">Platform-native content for every channel<span class="av-arrow">↗</span></div>
+        <div class="av">Data-driven strategy, not guesswork<span class="av-arrow">↗</span></div>
+        <div class="av">Real community management, 24/7<span class="av-arrow">↗</span></div>
+        <div class="av">Monthly performance reports & insights<span class="av-arrow">↗</span></div>
+        <div class="av">Consistent brand voice across all platforms<span class="av-arrow">↗</span></div>
+      </div>
+      <div style="margin-top:40px">
+        <a href="#services" class="btn btn-dark">Explore Services →</a>
+      </div>
+    </div>
+    <div class="about-right" data-r="right">
+      <div class="about-visual">
+        <div class="av-orb av-orb-1"></div>
+        <div class="av-orb av-orb-2"></div>
+        <div class="av-dashboard">
+          <div class="avd-header">
+            <div class="avd-dot avd-dot-r"></div>
+            <div class="avd-dot avd-dot-y"></div>
+            <div class="avd-dot avd-dot-g"></div>
+            <span class="avd-title">Brand Analytics</span>
+          </div>
+          <div class="avd-chart">
+            <div class="avd-bar" style="--h:35%;--c:var(--accent)"></div>
+            <div class="avd-bar" style="--h:58%;--c:var(--accent3)"></div>
+            <div class="avd-bar" style="--h:44%;--c:var(--accent2)"></div>
+            <div class="avd-bar" style="--h:72%;--c:var(--accent)"></div>
+            <div class="avd-bar" style="--h:60%;--c:var(--accent3)"></div>
+            <div class="avd-bar" style="--h:88%;--c:var(--accent)"></div>
+            <div class="avd-bar" style="--h:79%;--c:var(--accent4)"></div>
+          </div>
+          <div class="avd-stats">
+            <div class="avd-stat"><span class="avd-stat-n" style="color:var(--accent)">+247%</span><span class="avd-stat-l">Reach</span></div>
+            <div class="avd-stat"><span class="avd-stat-n" style="color:var(--accent3)">+189%</span><span class="avd-stat-l">Followers</span></div>
+            <div class="avd-stat"><span class="avd-stat-n" style="color:var(--accent2)">+312%</span><span class="avd-stat-l">Engagement</span></div>
+          </div>
+        </div>
+        <div class="av-notif av-notif-1"><span>❤️</span> 1.2k new likes</div>
+        <div class="av-notif av-notif-2"><span>👥</span> 48 new followers</div>
+        <div class="av-notif av-notif-3"><span>💬</span> 36 comments</div>
+        <div class="av-ring av-ring-1"></div>
+        <div class="av-ring av-ring-2"></div>
+      </div>
+      <div class="about-card">
+        <div class="ac-line"></div>
+        <div>
+          <div class="ac-quote">"Your brand deserves to be seen."</div>
+          <div class="ac-attr">Àkanní · Social Media Studio · India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="srv-hd" data-r="up">
+    <div>
+      <div class="eyebrow">Services</div>
+      <h2 class="sh">What we <em>deliver</em></h2>
+    </div>
+    <p class="srv-hd-r">Three core disciplines. One focused studio. Maximum social impact for your brand.</p>
+  </div>
+  <div class="svc-grid svc-grid-3">
+    <div class="svc-card" data-svc="1">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-visual svc-visual-1">
+          <div class="svc-anim-wrap">
+            <div class="svc-phone">
+              <div class="svc-phone-screen">
+                <div class="svc-feed-item"></div>
+                <div class="svc-feed-item"></div>
+                <div class="svc-feed-item"></div>
+              </div>
+            </div>
+            <div class="svc-notif svc-notif-1"><span class="svc-notif-icon">❤️</span> 248 likes</div>
+            <div class="svc-notif svc-notif-2"><span class="svc-notif-icon">💬</span> 43 comments</div>
+            <div class="svc-notif svc-notif-3"><span class="svc-notif-icon">🔁</span> 19 shares</div>
+            <div class="svc-ring svc-ring-1"></div>
+            <div class="svc-ring svc-ring-2"></div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">01</span>
+            <span class="svc-card-chip">Always-On</span>
+          </div>
+          <div class="svc-card-title">Social Media Management</div>
+          <p class="svc-card-desc">End-to-end management of your Instagram, Facebook, LinkedIn, X and more. We handle scheduling, posting, engagement, and growth so you don't have to.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Daily posting & scheduling</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Community management & DMs</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Hashtag & growth strategy</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="svc-card" data-svc="2" style="transition-delay:.1s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-visual svc-visual-2">
+          <div class="svc-anim-wrap">
+            <div class="svc-chart">
+              <div class="svc-bar" style="--h:40%;--d:0s"></div>
+              <div class="svc-bar" style="--h:65%;--d:.1s"></div>
+              <div class="svc-bar" style="--h:50%;--d:.2s"></div>
+              <div class="svc-bar" style="--h:80%;--d:.3s"></div>
+              <div class="svc-bar" style="--h:60%;--d:.4s"></div>
+              <div class="svc-bar" style="--h:90%;--d:.5s"></div>
+              <div class="svc-bar" style="--h:75%;--d:.6s"></div>
+            </div>
+            <div class="svc-line-graph">
+              <svg viewBox="0 0 120 50" preserveAspectRatio="none">
+                <polyline class="svc-graph-line" points="0,40 20,30 40,35 60,15 80,20 100,8 120,5"/>
+              </svg>
+            </div>
+            <div class="svc-metric">
+              <div class="svc-metric-num">+247%</div>
+              <div class="svc-metric-label">Reach Growth</div>
+            </div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">02</span>
+            <span class="svc-card-chip">Data-Led</span>
+          </div>
+          <div class="svc-card-title">SMM Strategy</div>
+          <p class="svc-card-desc">Custom social strategies rooted in data. We audit your presence, analyse competitors, and build a roadmap that turns your social channels into revenue engines.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Platform & competitor audit</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Content calendar & pillars</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Monthly analytics reports</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="svc-card" data-svc="3" style="transition-delay:.2s">
+      <div class="svc-card-inner">
+        <div class="svc-card-bar"></div>
+        <div class="svc-card-shine"></div>
+        <div class="svc-visual svc-visual-3">
+          <div class="svc-anim-wrap">
+            <div class="svc-canvas">
+              <div class="svc-post svc-post-1"></div>
+              <div class="svc-post svc-post-2"></div>
+              <div class="svc-post svc-post-3"></div>
+              <div class="svc-cursor"></div>
+              <div class="svc-sparkle svc-sparkle-1">✦</div>
+              <div class="svc-sparkle svc-sparkle-2">✦</div>
+              <div class="svc-sparkle svc-sparkle-3">✦</div>
+            </div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-top">
+            <span class="svc-card-num">03</span>
+            <span class="svc-card-chip">Scroll-Stopping</span>
+          </div>
+          <div class="svc-card-title">Content Creation</div>
+          <p class="svc-card-desc">Thumb-stopping visuals, captions that convert, and Reels that go viral. We create platform-native content that looks stunning and performs even better.</p>
+          <div class="svc-card-feats">
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Graphic design & Reels</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Copywriting & captions</div>
+            <div class="svc-card-feat"><span class="svc-feat-dot"></span>Stories, carousels & ads</div>
+          </div>
+          <div class="svc-card-foot">
+            <span class="svc-card-cta">Explore service</span>
+            <div class="svc-card-arr">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="work-inner">
+    <div class="whead" data-r="up">
+      <div>
+        <div class="eyebrow">Selected Work</div>
+        <h2 class="sh">Projects that <em>define</em> us</h2>
+      </div>
+      <a href="#cta" class="btn btn-ghost">Start a project →</a>
+    </div>
+  </div>
+  <div class="proj-list">
+    <div class="proj" data-r="up">
+      <div class="proj-solid proj-solid-1">
+        <div class="proj-solid-orb ps-orb-1"></div>
+        <div class="proj-solid-orb ps-orb-2"></div>
+        <div class="proj-solid-label">Agrotourism</div>
+      </div>
+      <div class="proj-tint proj-tint-1"></div>
+      <div class="proj-grad"></div>
+      <div class="proj-body">
+        <div class="proj-left">
+          <div class="proj-index">Agrotourism · Social Media & Web</div>
+          <div class="proj-name">Kawalthe<br>Konnections</div>
+          <div class="proj-desc">Built a full social presence for an agrotourism destination — Instagram content strategy, Reels, and organic growth that turned a hidden gem into a booked-out destination.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Instagram</span>
+            <span class="proj-tag">Content Strategy</span>
+            <span class="proj-tag">Reels</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-year">2024</span>
+          <div class="proj-cta">↗</div>
+        </div>
+      </div>
+    </div>
+    <div class="proj" data-r="up" style="transition-delay:.1s">
+      <div class="proj-solid proj-solid-2">
+        <div class="proj-solid-orb ps-orb-3"></div>
+        <div class="proj-solid-orb ps-orb-4"></div>
+        <div class="proj-solid-label">EdTech</div>
+      </div>
+      <div class="proj-tint proj-tint-2"></div>
+      <div class="proj-grad"></div>
+      <div class="proj-body">
+        <div class="proj-left">
+          <div class="proj-index">EdTech · Social Media Marketing</div>
+          <div class="proj-name">Comic<br><em style="color:var(--accent3)">Bee</em></div>
+          <div class="proj-desc">Crafted a vibrant social identity for an EdTech platform — playful content, student-first storytelling, and campaigns that drove signups and community growth.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Content Creation</span>
+            <span class="proj-tag">Brand Voice</span>
+            <span class="proj-tag">Paid Social</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-year">2024</span>
+          <div class="proj-cta">↗</div>
+        </div>
+      </div>
+    </div>
+    <div class="proj" data-r="up" style="transition-delay:.2s">
+      <div class="proj-solid proj-solid-3">
+        <div class="proj-solid-orb ps-orb-5"></div>
+        <div class="proj-solid-orb ps-orb-6"></div>
+        <div class="proj-solid-label">Fashion</div>
+      </div>
+      <div class="proj-tint proj-tint-3"></div>
+      <div class="proj-grad"></div>
+      <div class="proj-body">
+        <div class="proj-left">
+          <div class="proj-index">Fashion · Social Media & Brand</div>
+          <div class="proj-name">Lisa<em style="color:var(--accent2);font-style:italic">.clo</em></div>
+          <div class="proj-desc">Managing the full social presence of a growing fashion brand — editorial content, lookbook campaigns, influencer tie-ups, and a community that converts into sales.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Fashion Brand</span>
+            <span class="proj-tag">SMM</span>
+            <span class="proj-tag">Ongoing</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-status">Ongoing</span>
+          <div class="proj-cta">↗</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="sec" style="padding-bottom:0">
+    <div data-r="up">
+      <div class="eyebrow">How We Work</div>
+      <h2 class="sh" style="max-width:460px">A process built for <em>results</em></h2>
+    </div>
+  </div>
+  <div class="pgrid" style="margin:72px 60px 0">
+    <div class="pc" data-r="up" style="transition-delay:.04s">
+      <div class="pc-n">01 — AUDIT</div>
+      <div class="pc-vis pc-vis-1">
+        <div class="pcv-icon">⚡</div>
+        <div class="pcv-lines"><div class="pcv-line"></div><div class="pcv-line"></div><div class="pcv-line short"></div></div>
+      </div>
+      <div class="pc-name">Brand Audit</div>
+      <p class="pc-desc">We deep-dive into your current social presence, audience data, and competitors to find every growth opportunity.</p>
+      <div class="pchips"><span class="pchip">Analytics</span><span class="pchip">Competitor Research</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.08s">
+      <div class="pc-n">02 — STRATEGY</div>
+      <div class="pc-vis pc-vis-2">
+        <div class="pcv-icon">🗺</div>
+        <div class="pcv-dots"><div class="pcv-dot"></div><div class="pcv-dot"></div><div class="pcv-dot"></div><div class="pcv-dot"></div></div>
+      </div>
+      <div class="pc-name">Strategy & Planning</div>
+      <p class="pc-desc">Content pillars, posting cadence, platform mix, and a monthly content calendar built around your goals.</p>
+      <div class="pchips"><span class="pchip">Content Pillars</span><span class="pchip">Calendar</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.12s">
+      <div class="pc-n">03 — CREATE</div>
+      <div class="pc-vis pc-vis-3">
+        <div class="pcv-icon">✦</div>
+        <div class="pcv-brush"></div>
+      </div>
+      <div class="pc-name">Content Creation</div>
+      <p class="pc-desc">Scroll-stopping visuals, copy, Reels and stories — crafted to look native on every platform and drive engagement.</p>
+      <div class="pchips"><span class="pchip">Design</span><span class="pchip">Copywriting</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.16s">
+      <div class="pc-n">04 — PUBLISH</div>
+      <div class="pc-vis pc-vis-4">
+        <div class="pcv-icon">📡</div>
+        <div class="pcv-waves"><div class="pcv-wave"></div><div class="pcv-wave"></div><div class="pcv-wave"></div></div>
+      </div>
+      <div class="pc-name">Publish & Engage</div>
+      <p class="pc-desc">We schedule posts at peak times, respond to comments and DMs, and keep your community active and growing.</p>
+      <div class="pchips"><span class="pchip">Scheduling</span><span class="pchip">Community</span></div>
+    </div>
+    <div class="pc" data-r="up" style="transition-delay:.20s">
+      <div class="pc-n">05 — OPTIMISE</div>
+      <div class="pc-vis pc-vis-5">
+        <div class="pcv-icon">📈</div>
+        <div class="pcv-ring-outer"><div class="pcv-ring-inner"></div></div>
+      </div>
+      <div class="pc-name">Analyse & Optimise</div>
+      <p class="pc-desc">Monthly performance reports with clear metrics. We double down on what works and cut what doesn't.</p>
+      <div class="pchips"><span class="pchip">Reports</span><span class="pchip">Growth</span></div>
+    </div>
+  </div>
+  <div style="height:140px"></div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testi" class="sec">
+  <div data-r="up">
+    <div class="eyebrow">Clients</div>
+    <h2 class="sh">What they <em>say</em></h2>
+  </div>
+  <div class="tgrid">
+    <div class="tc" data-r="up" style="transition-delay:.07s">
+      <p class="tq">Àkanní completely transformed our Instagram presence. Engagement shot up within the first month and we started getting DMs from customers who found us organically.</p>
+      <div class="ta">
+        <div class="ta-avatar" style="background:linear-gradient(135deg,var(--accent),var(--accent2))">RS</div>
+        <div><div class="ta-n">Rahul Sharma</div><div class="ta-r">Founder, Kawalthe Konnections</div></div>
+      </div>
+    </div>
+    <div class="tc" data-r="up" style="transition-delay:.14s">
+      <p class="tq">The content they create for Comic Bee is exactly on-brand. They understood our student audience immediately and the results speak for themselves.</p>
+      <div class="ta">
+        <div class="ta-avatar" style="background:linear-gradient(135deg,var(--accent3),var(--accent))">PD</div>
+        <div><div class="ta-n">Priya Deshmukh</div><div class="ta-r">Co-Founder, Comic Bee</div></div>
+      </div>
+    </div>
+    <div class="tc" data-r="up" style="transition-delay:.21s">
+      <p class="tq">Our Lisa.clo feed looks stunning now. Àkanní gets fashion. Every post is editorial-quality and our followers have doubled since we started working together.</p>
+      <div class="ta">
+        <div class="ta-avatar" style="background:linear-gradient(135deg,var(--accent2),var(--accent4))">AK</div>
+        <div><div class="ta-n">Amit Kulkarni</div><div class="ta-r">CEO, Lisa.clo</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-mesh">
+    <div class="cta-orb cta-orb-1"></div>
+    <div class="cta-orb cta-orb-2"></div>
+    <div class="cta-orb cta-orb-3"></div>
+  </div>
+  <div class="cta-bg">Àkanní</div>
+  <div class="eyebrow" data-r="up" style="justify-content:center">Let's Grow Together</div>
+  <h2 class="sh" data-r="up" style="transition-delay:.09s">Ready to make your<br>brand <em>unmissable?</em></h2>
+  <p class="cta-sub" data-r="up" style="transition-delay:.18s">Whether you're launching a brand, scaling a business, or just tired of posting into the void — Àkanní is your social media growth partner.</p>
+  <div class="cta-row" data-r="up" style="transition-delay:.27s">
+    <a href="mailto:hello@akanni.co.in" class="btn btn-dark">Start a Conversation →</a>
+    <a href="#work" class="btn btn-ghost-w">See Our Work</a>
+  </div>
+  <p class="cta-email" data-r="up" style="transition-delay:.36s">Or email us at <a href="mailto:hello@akanni.co.in">hello@akanni.co.in</a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftop">
+    <div>
+      <div class="flogo">Àkan<em>n</em>í</div>
+      <p class="ftag">Social media management, strategy & content creation for brands that refuse to be ignored.</p>
+    </div>
+    <div>
+      <div class="fct">Company</div>
+      <div class="flinks">
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#work">Portfolio</a>
+        <a href="#process">Process</a>
+      </div>
+    </div>
+    <div>
+      <div class="fct">Services</div>
+      <div class="flinks">
+        <a href="#">Social Media Management</a>
+        <a href="#">SMM Strategy</a>
+        <a href="#">Content Creation</a>
+        <a href="#">Paid Social Ads</a>
+      </div>
+    </div>
+    <div>
+      <div class="fct">Connect</div>
+      <div class="flinks">
+        <a href="https://akanni.co.in" target="_blank">akanni.co.in</a>
+        <a href="https://www.linkedin.com/company/akanni-team-ab0047342/">LinkedIn</a>
+        <a href="https://www.instagram.com/_.akanni.__">Instagram</a>
+        <a href="https://wa.me/918208125606">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="fbot">
+    <span class="fbot-l">© 2025 Àkanní. All rights reserved. India.</span>
+    <div class="fsoc">
+      <a href="https://www.linkedin.com/company/akanni-team-ab0047342/" class="fsl">in</a>
+      <a href="tel:+918208125606" class="fsl">&#128222;</a>
+      <a href="https://www.instagram.com/_.akanni.__" class="fsl">ig</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
